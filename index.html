@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+</head>
+<body>
+    <h1>User Registration</h1>
+    <form method="post" action="/cgi-bin/main.py">
+
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br>
+
+        <label for="newsletter">Subscribe to newsletter:</label>
+        <input type="checkbox" name="newsletter" id="newsletter"><br>
+
+        <label for="country">Select your country:</label>
+        <select name="country" id="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+        </select><br>
+
+        <p>Gender:</p>
+        <label><input type="radio" name="gender" value="male"> Male</label><br>
+        <label><input type="radio" name="gender" value="female"> Female</label><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
